@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  /*Colores primarios*/
+  --bg: hsl(233, 47%, 7%);
+  --card_bg: hsl(244, 38%, 16%);
+  --soft_violet: hsl(277, 64%, 61%);
+  /*Neutral*/
+  --main_paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat_headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1080px;
+  height: 446.4px;
+  background-color: var(--card_bg);
+  color: var(--main_paragraph);
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.contenedor-imagen {
+  border-radius: 0 10px 10px 0;
+  background-color: var(--soft_violet);
+}
+
+.contenedor-imagen img {
+  border-radius: 0 10px 10px 0;
+  mix-blend-mode: multiply;
+  opacity: 75%;
+  height: 100%;
+}
+
+div.informacion {
+  padding: 70px 90px 60px 60px;
+}
+
+span {
+  color: var(--soft_violet);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.3em;
+}
+
+div.informacion > p {
+  line-height: 25px;
+  color: var(--stat_headings);
+  margin: 30px 0 70px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 0 0;
+  list-style-type: none;
+}
+
+ul li p.cantidad {
+  font-weight: 700;
+  font-size: 1.7em;
+}
+
+ul li p.texto {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--stat_headings);
+  font-size: 0.8em;
+  margin-top: 7px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    height: initial;
+    padding: 50px 30px;
+  }
+
+  .tarjeta {
+    flex-direction: column;
+    max-width: 500px;
+    min-width: 319px;
+    height: initial;
+    text-align: center;
+  }
+
+  .contenedor-imagen {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .contenedor-imagen img {
+    width: 100%;
+    border-radius: inherit;
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+
+  div.informacion {
+    padding: 60px 40px 40px;
+  }
+
+  div.informacion > p {
+    margin: 30px 0 30px;
+    font-size: 0.9em;
+  }
+
+  ul {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  ul li {
+    margin-top: 30px;
+  }
+
+  ul li p.cantidad {
+    font-size: 1.5em;
+  }
+}
