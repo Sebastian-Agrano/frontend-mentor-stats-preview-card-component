@@ -30,6 +30,10 @@ Users should be able to:
 #### Mobile 375px
 ![](./screenshots/mobile-screenshot.jpg)
 
+### Link
+
+- Live Site URL: [Github Pages](https://sebastian-agrano.github.io/frontend-mentor-stats-preview-card-component/)
+
 ## My process
 
 ### Built with
