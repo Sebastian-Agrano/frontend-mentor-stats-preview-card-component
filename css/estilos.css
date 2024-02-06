@@ -97,7 +97,7 @@ ul li p.texto {
   .tarjeta {
     flex-direction: column;
     max-width: 500px;
-    min-width: 319px;
+    min-width: 260px;
     height: initial;
     text-align: center;
   }
